@@ -1,6 +1,6 @@
 
 /**
- * A classe VisorNumero representa um vistor digital de números que pode
+ * A classe VisorDeNumero representa um vistor digital de números que pode
  * armazenar valores de zero até um dado limite. O limite pode ser definido
  * quando o vistor é criado. Os valores vão de zero (inclusive) até limite-1.
  * Se o visor for usado para os seguintes de um relógio digital, por exemplo,
@@ -13,16 +13,16 @@
  * @author Michael Kölling and David J. Barnes
  * @version 2016.02.29
  */
-public class VisorNumero
+public class VisorDeNumero
 {
     private int limite;
     private int valor;
 
     /**
-     * Construtor para objetos da classe VisorNumero.
+     * Construtor para objetos da classe VisorDeNumero.
      * Define o limite no qual o visor volta para zero.
      */
-    public VisorNumero(int limiteParaZerar)
+    public VisorDeNumero(int limiteParaZerar)
     {
         limite = limiteParaZerar;
         valor = 0;

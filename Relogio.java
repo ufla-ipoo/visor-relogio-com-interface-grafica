@@ -17,7 +17,7 @@ public class Relogio
 {
     private JFrame quadro;
     private JLabel rotulo;
-    private VisorRelogio visor;
+    private VisorDeRelogio visor;
     private boolean relogioFuncionando = false;
     private TimerThread temporizador;
     
@@ -27,7 +27,7 @@ public class Relogio
     public Relogio()
     {
         construirQuadro();
-        visor = new VisorRelogio();
+        visor = new VisorDeRelogio();
     }
     
     /**

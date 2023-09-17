@@ -1,6 +1,6 @@
 
 /**
- * A classe VisorRelogio implementa um vistor de relógio digital.
+ * A classe VisorDeRelogio implementa um vistor de relógio digital.
  * O relógio mostra horas e minutos. O relógio marca de 00:00 (meia-noite)
  * até 23:59 (um minuto para meia-noite).
  * 
@@ -13,32 +13,32 @@
  * @author Michael Kölling and David J. Barnes
  * @version 2016.02.29
  */
-public class VisorRelogio
+public class VisorDeRelogio
 {
-    private VisorNumero horas;
-    private VisorNumero minutos;
+    private VisorDeNumero horas;
+    private VisorDeNumero minutos;
     private String stringVisor;    // simula o visor real
     
     /**
-     * Construtor para objetos VisorRelogio. Este construtor
+     * Construtor para objetos VisorDeRelogio. Este construtor
      * cria um novo relógio marcando 00:00.
      */
-    public VisorRelogio()
+    public VisorDeRelogio()
     {
-        horas = new VisorNumero(24);
-        minutos = new VisorNumero(60);
+        horas = new VisorDeNumero(24);
+        minutos = new VisorDeNumero(60);
         atualizarVisor();
     }
 
     /**
-     * Construtor para objetos VisorRelogio. Este construtor
+     * Construtor para objetos VisorDeRelogio. Este construtor
      * cria um novo relógio marcando as horas de acordo com 
      * os parâmetros recebidos.
      */
-    public VisorRelogio(int hora, int minuto)
+    public VisorDeRelogio(int hora, int minuto)
     {
-        horas = new VisorNumero(24);
-        minutos = new VisorNumero(60);
+        horas = new VisorDeNumero(24);
+        minutos = new VisorDeNumero(60);
         definirHora(hora, minuto);
     }
 
