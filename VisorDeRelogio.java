@@ -1,6 +1,6 @@
 
 /**
- * A classe VisorDeRelogio implementa um vistor de relógio digital.
+ * A classe VisorDeRelogio implementa um visor de relógio digital.
  * O relógio mostra horas e minutos. O relógio marca de 00:00 (meia-noite)
  * até 23:59 (um minuto para meia-noite).
  * 
@@ -59,10 +59,10 @@ public class VisorDeRelogio
      * Define a hora do visor de acordo com o valor de hora e
      * minuto recebidos por parâmetro.
      */
-    public void definirHora(int hour, int minute)
+    public void definirHora(int hora, int minuto)
     {
-        horas.definirValor(hour);
-        minutos.definirValor(minute);
+        horas.definirValor(hora);
+        minutos.definirValor(minuto);
         atualizarVisor();
     }
 
